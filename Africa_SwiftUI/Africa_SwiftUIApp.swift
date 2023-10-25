@@ -9,10 +9,13 @@ import SwiftUI
 
 @main
 struct Africa_SwiftUIApp: App {
+    // MARK: - プロパティー
+
+    // MARK: - ボディ
 
     var body: some Scene {
         WindowGroup {
             Home()
         }
-    }
+    }//: - ボディ
 }

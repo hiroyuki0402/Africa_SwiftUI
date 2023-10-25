@@ -1,52 +1,53 @@
 [
   {
     "id" : "cheetah",
-    "name" : "Cheetah",
-    "headline" : "Cheetah walking in the savannah"
+    "name" : "チーター",
+    "headline" : "サバンナを歩くチーター"
   },
   {
     "id" : "elephant",
-    "name" : "Elephant",
-    "headline" : "African elephant with calf walking"
+    "name" : "ゾウ",
+    "headline" : "子象と一緒に歩くアフリカゾウ"
   },
   {
     "id" : "giraffe",
-    "name" : "Giraffe",
-    "headline" : "Lonely giraffe walking in the savannah"
+    "name" : "キリン",
+    "headline" : "サバンナを歩く孤独なキリン"
   },
   {
     "id" : "gorilla",
-    "name" : "Gorilla",
-    "headline" : "Western lowland adult gorilla walking"
+    "name" : "ゴリラ",
+    "headline" : "歩く西部低地の成熟したゴリラ"
   },
   {
     "id" : "hippo",
-    "name" : "Hippo",
-    "headline" : "A cow hippo and her calf together in the water"
+    "name" : "カバ",
+    "headline" : "水の中で子カバと一緒にいる母カバ"
   },
   {
     "id" : "lioness",
-    "name" : "Lioness",
-    "headline" : "African lioness slowly walking on the African savannah"
+    "name" : "ライオンの雌",
+    "headline" : "アフリカのサバンナをゆっくりと歩くライオンの雌"
   },
   {
     "id" : "lion",
-    "name" : "Lion",
-    "headline" : "Close-up of a growling African lion"
+    "name" : "ライオン",
+    "headline" : "威嚇するアフリカライオンのクローズアップ"
   },
   {
     "id" : "ostrich",
-    "name" : "Ostrich",
-    "headline" : "Cock ostrich grazing on the savannah"
+    "name" : "ダチョウ",
+    "headline" : "サバンナで草を食べる雄ダチョウ"
   },
   {
     "id" : "rhino",
-    "name" : "Rhino",
-    "headline" : "Southern White Rhino walking in the grass"
+    "name" : "サイ",
+    "headline" : "草を歩く南部ホワイトサイ"
   },
   {
     "id" : "zebra",
-    "name" : "Zebra",
-    "headline" : "Adult striped zebra grazing rusty grass in summer"
+    "name" : "シマウマ",
+    "headline" : "夏のさびた草を食べる大人のストライプのシマウマ"
   }
 ]
+
