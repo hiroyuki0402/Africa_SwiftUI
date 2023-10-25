@@ -8,6 +8,9 @@
 import Foundation
 
 struct CoverImageData: Codable, Identifiable {
+    /// データの一意な識別子
     let id: Int
+
+    /// カバーイメージの名前
     let name: String
 }
