@@ -54,16 +54,39 @@ struct AnimalDetailView: View {
                 .padding(.horizontal)
 
                 /// 動物に関するセクション
-                // TODO: -
+                Group {
+                    HeadingView(headingImage: "questionmark.circle", headingText: "知っていましたか？")
+                    InsetFactView(animalDatas: animalData)
+                }
+                .padding(.horizontal)
 
                 /// 動物の詳細な情報や特徴を表示するセクション
-                // TODO: -
+                Group {
+                    HeadingView(headingImage: "info.circle", headingText: "\(animalData.name)の全て")
+
+                    Text(animalData.description)
+                        .multilineTextAlignment(.leading)
+                        .layoutPriority(1)
+
+
+                }
+                .padding(.horizontal)
 
                 /// 動物の生息地をマップで表示するセクション
-                // TODO: -
+                Group {
+                    HeadingView(headingImage: "map", headingText: "National Parks")
+                    InsetMapView()
+                }
+                .padding(.horizontal)
 
                 /// 動物に関する外部リンクや関連情報のセクション
-                // TODO: -
+                Group {
+                    HeadingView(headingImage: "books.vertical", headingText: "もっと詳しく知る")
+
+                    ExternalWeblinkView(animalData: animalData)
+
+                }
+                .padding(.horizontal)
 
             }//: VSTACK
             .navigationBarTitle("\(animalData.name)について学ぶ", displayMode: .inline)
