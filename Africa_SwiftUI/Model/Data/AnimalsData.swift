@@ -17,6 +17,9 @@ struct AnimalsData: Codable, Identifiable {
     /// 動物に関する短い見出しまたは説明
     let headline: String
 
+    /// 動物に関する詳細
+    let description: String
+
     /// 動物に関する詳細情報へのリンク
     let link: String
 

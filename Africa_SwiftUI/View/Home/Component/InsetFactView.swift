@@ -8,11 +8,29 @@
 import SwiftUI
 
 struct InsetFactView: View {
+    // MARK: - プロパティー
+
+    let animalDatas: AnimalsData
+
+    // MARK: - ボディ
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        GroupBox {
+            TabView {
+                ForEach(animalDatas.fact, id: \.self) { item in
+                    Text(item)
+                }
+            }//: TabView
+            .tabViewStyle(.page)
+            .frame(minHeight: 148, idealHeight: 168, maxHeight: 180)
+
+        }//: BoGroupBoxx
+
     }
-}
+}//: ボディ
 
 #Preview {
-    InsetFactView()
+    InsetFactView(animalDatas: AnimalsViewModel().getAnimalData(at: 0))
+        .previewLayout(.sizeThatFits)
+        .padding()
 }
