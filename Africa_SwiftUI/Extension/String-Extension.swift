@@ -34,5 +34,34 @@ extension String {
         /// どちらも失敗した場合は、ランタイムエラーを発生させる
         fatalError("URLを作成できませんでした。")
     }
+
+    /// 文字列にプレフィックスを追加して新しい画像名を生成します。
+    ///
+    /// このメソッドは、与えられた文字列に"video-"というプレフィックスを追加します。
+    /// 主に画像のファイル名を生成する際に使用されます。
+    ///
+    /// - Returns: プレフィックスが追加された新しい画像名（文字列）。
+    ///
+    func makeImageName() -> String {
+        let commonTitle: String = "video-"
+        return commonTitle + self
+    }
+
+
+    /// 文字列からビデオのURLの作成をします
+    ///
+    /// このメソッドは与えられた文字列から`fileExtension`で指定されたURLを作成する
+    /// (例) `let fileName = "Video"`` let url = fileName.toVideoUrl(.mp4)`
+    ///
+    ///
+    /// - Parameter fileExtension: 指定された拡張子
+    /// - Returns: 指定された拡張子で作成されたURL
+    func toVideoUrl(_ fileExtension: FileExtension) -> URL {
+        if let url = Bundle.main.url(forResource: self, withExtension: fileExtension.getExtension()) {
+            return url
+        }
+        fatalError()
+    }
+
 }
 

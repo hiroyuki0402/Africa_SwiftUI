@@ -10,7 +10,7 @@ import Foundation
 struct VideosData: Codable, Identifiable {
 
     /// ビデオデータの一意な識別子
-    let id: Int
+    let id: String
 
     /// ビデオの名前またはタイトル
     let name: String
@@ -19,3 +19,4 @@ struct VideosData: Codable, Identifiable {
     let headline: String
 }
 
+typealias Videos = [VideosData]
